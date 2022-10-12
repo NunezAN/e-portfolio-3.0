@@ -23,7 +23,7 @@ export default function About({}: Props) {
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
-          Here's a bit about{" "}
+          Here&apos;s a bit about{" "}
           <span className="underline decoration-[#7289da]/50">me.</span>
         </h4>
         <p className="text-base">
