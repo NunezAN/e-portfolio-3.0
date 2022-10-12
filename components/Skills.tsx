@@ -12,7 +12,7 @@ export default function Skills({}: Props) {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
         THIS IS MY TECH STACK
       </h3>
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 md:gap-5 md:gap-y-8 xl:gap-y-8 xl:mt-20 md:mt-20 mt-20 sm:mt-8">
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-0 md:gap-5 md:gap-y-8 xl:gap-y-8 xl:mt-20 md:mt-20 mt-20 sm:mt-8">
         <Skill
           url="https://cdn-icons-png.flaticon.com/512/732/732212.png"
           name="HTML"
