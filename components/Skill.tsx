@@ -15,7 +15,7 @@ export default function Skill({ url, name }: Props) {
       initial={{ y: 200, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="group relative flex flex-col cursor-pointer p-2"
+      className="group relative flex flex-col items-center cursor-pointer p-2"
     >
       <img
         src={url}
