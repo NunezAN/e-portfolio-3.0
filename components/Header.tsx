@@ -2,8 +2,6 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Social } from "../typings";
-
 type Props = {
   // socials: Social[];
 };
@@ -18,15 +16,6 @@ export default function Header({}: Props) {
         transition={{ duration: 1.5 }}
         className="flex flex-row items-center"
       >
-        {/* {socials.map((social) => (
-          <SocialIcon
-            key={social._id}
-            url={social.url}
-            target="_blank"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-        ))} */}
         <SocialIcon
           url="https://www.linkedin.com/in/alexis-nunez-7b468624a/"
           fgColor="gray"
@@ -39,6 +28,9 @@ export default function Header({}: Props) {
           bgColor="transparent"
           target="_blank"
         />
+        <a href="resume.pdf" target="_blank">
+          p
+        </a>
       </motion.div>
       <Link href="#contact">
         <motion.div
