@@ -4,7 +4,57 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function Projects({}: Props) {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    {
+      title: "FES Internship",
+      image: "https://e-portfolio-02.vercel.app/assets/internshipCover.png",
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+      linkToBuild: "https://nunez-internship-git-main-nunezan.vercel.app/",
+      linkToGit: "https://github.com/NunezAN/Nunez-Internship",
+    },
+    {
+      title: "Ecommerce Movie Application",
+      image: "https://e-portfolio-02.vercel.app/assets/blockbusterCover.png",
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+      linkToBuild: "https://react-library-phi.vercel.app/",
+      linkToGit: "https://github.com/NunezAN/react-library",
+    },
+    {
+      title: "Marvel Comic Application",
+      image: "https://e-portfolio-02.vercel.app/assets/marvelProject.png",
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+      linkToBuild: "https://marvel-1b3e8.web.app/",
+      linkToGit: "https://github.com/NunezAN/marvel-react",
+    },
+    {
+      title: "Google/Gmail Clone",
+      image: "https://e-portfolio-02.vercel.app/assets/googleClone.png",
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+      linkToBuild: "https://github.com/NunezAN/google-clone",
+      linkToGit: "https://clone-11a1a.web.app/",
+    },
+    {
+      title: "Twitter Clone",
+      image: "https://e-portfolio-02.vercel.app/assets/twitterClone.png",
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+      linkToBuild: "https://twitter-clone-e4f49.web.app/",
+      linkToGit: "https://github.com/NunezAN/Twitter-clone",
+    },
+    {
+      title: "Hulu Clone",
+      image:
+        "https://cdn.sanity.io/images/owbhdwhm/production/334e4f969fe6df9be28e813ecf5c12130e8c2b5d-1920x1080.png?w=2000&fit=max&auto=format",
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+      linkToBuild: "https://hulu-2-0-iota.vercel.app/",
+      linkToGit: "https://github.com/NunezAN/hulu-2.0",
+    },
+  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,7 +69,7 @@ export default function Projects({}: Props) {
         {projects.map((project, index) => (
           <div key={index} className="relative scroll-smooth">
             <a
-              href={`#slide${index != 0 ? index - 1 : 4}`}
+              href={`#slide${index != 0 ? index - 1 : 5}`}
               className="btn btn-circle absolute z-21 top-1/2 left-[100px] opacity-0 md:opacity-100"
             >
               ❮
@@ -33,7 +83,7 @@ export default function Projects({}: Props) {
                 transition={{ duration: 0.8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 className="w-[800px]"
-                src="https://e-portfolio-02.vercel.app/assets/internshipCover.png"
+                src={project.image}
                 alt=""
               />
               <motion.div
@@ -43,20 +93,15 @@ export default function Projects({}: Props) {
                 className="space-y-10 px-0 md:px-10 max-w-6xl"
               >
                 <h4 className="text-4xl font-semibold text-center">
-                  Internship
+                  {project.title}
                 </h4>
                 <p className="text-lg text-center md:text-left">
-                  Online Internship html,CSS, JavaScript Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Suscipit est dolorum
-                  eligendi, quis quo, alias, fugit similique error voluptas unde
-                  odio amet esse numquam dolorem. Obcaecati soluta ab maiores
-                  necessitatibus. Perferendis eligendi ullam ipsa, est animi
-                  laborum fuga illo vel!
+                  {project.summary}
                 </p>
               </motion.div>
             </div>
             <a
-              href={`#slide${index != 4 ? index + 1 : 0}`}
+              href={`#slide${index != 5 ? index + 1 : 0}`}
               className="btn btn-circle absolute z-21 top-1/2 right-[100px] opacity-0 md:opacity-100"
             >
               ❯
