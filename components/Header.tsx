@@ -5,11 +5,11 @@ import Link from "next/link";
 import { Social } from "../typings";
 
 type Props = {
-  socials: Social[];
+  // socials: Social[];
 };
 
-export default function Header({ socials }: Props) {
-  console.log(socials);
+export default function Header({}: Props) {
+  // console.log(socials);
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -18,7 +18,7 @@ export default function Header({ socials }: Props) {
         transition={{ duration: 1.5 }}
         className="flex flex-row items-center"
       >
-        {socials.map((social) => (
+        {/* {socials.map((social) => (
           <SocialIcon
             key={social._id}
             url={social.url}
@@ -26,12 +26,19 @@ export default function Header({ socials }: Props) {
             fgColor="gray"
             bgColor="transparent"
           />
-        ))}
-        {/* <SocialIcon
+        ))} */}
+        <SocialIcon
           url="https://www.linkedin.com/in/alexis-nunez-7b468624a/"
           fgColor="gray"
           bgColor="transparent"
-        /> */}
+          target="_blank"
+        />
+        <SocialIcon
+          url="https://github.com/NunezAN"
+          fgColor="gray"
+          bgColor="transparent"
+          target="_blank"
+        />
       </motion.div>
       <Link href="#contact">
         <motion.div
