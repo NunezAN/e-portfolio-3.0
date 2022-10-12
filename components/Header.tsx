@@ -2,9 +2,8 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
-type Props = {
-  // socials: Social[];
-};
+import { DocumentIcon } from "@heroicons/react/24/solid";
+type Props = {};
 
 export default function Header({}: Props) {
   // console.log(socials);
@@ -29,7 +28,7 @@ export default function Header({}: Props) {
           target="_blank"
         />
         <a href="resume.pdf" target="_blank">
-          p
+          <DocumentIcon className="text-[#808080] h-6 w-6 mx-2" />
         </a>
       </motion.div>
       <Link href="#contact">
