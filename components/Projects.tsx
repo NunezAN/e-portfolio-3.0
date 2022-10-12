@@ -82,7 +82,7 @@ export default function Projects({}: Props) {
                 initial={{ y: -300 }}
                 transition={{ duration: 0.8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className="w-[800px]"
+                className="w-[180px] md:w-[800px] rounded-lg"
                 src={project.image}
                 alt=""
               />
