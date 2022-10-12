@@ -27,7 +27,7 @@ export default function About({}: Props) {
           <span className="underline decoration-[#7289da]/50">me.</span>
         </h4>
         <p className="text-base">
-          I'm me, a frontend software engineer with experience developing
+          I&apos;m me, a frontend software engineer with experience developing
           websites. I currently solving extremely difficult engineering problems
           every day, no kizzy.
         </p>

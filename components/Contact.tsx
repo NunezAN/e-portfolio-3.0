@@ -40,7 +40,7 @@ export default function Contact({}: Props) {
       <div className="flex flex-col space-y-10">
         <h4 className="text-2xl md:text-4xl font-semibold text-center">
           Currently open to new opportunities,{" "}
-          <span className="underline decoration-[#7289da]/50">Let's Talk.</span>
+          <span className="underline decoration-[#7289da]/50">Let&apos;s Talk.</span>
         </h4>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">

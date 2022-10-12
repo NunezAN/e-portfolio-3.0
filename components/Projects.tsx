@@ -17,7 +17,7 @@ export default function Projects({}: Props) {
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 md:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white">
         {projects.map((project, index) => (
-          <div className="relative scroll-smooth">
+          <div key={index} className="relative scroll-smooth">
             <a
               href={`#slide${index != 0 ? index - 1 : 4}`}
               className="btn btn-circle absolute z-21 top-1/2 left-[100px] opacity-0 md:opacity-100"

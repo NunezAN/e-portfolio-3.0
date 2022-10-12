@@ -46,7 +46,7 @@ export default function Header({}: Props) {
             bgColor="transparent"
           />
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Let's have a chat
+            Let&apos;s have a chat
           </p>
         </motion.div>
       </Link>
