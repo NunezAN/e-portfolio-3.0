@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
+type Props = {
+  url: string;
+  name: string;
+};
 
-export default function Skill({}: Props) {
+export default function Skill({ url, name }: Props) {
   return (
     <motion.div
       //   initial={{ opacity: 0 }}
@@ -15,11 +18,12 @@ export default function Skill({}: Props) {
       className="group relative flex flex-col cursor-pointer p-2"
     >
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-        className="w-16 object-fill md:w-28 xl:w-32 group-hover:scale-90 group-hover:brightness-90 transition duration-300 ease-in-out"
+        src={url}
+        className="w-16 object-fill md:w-28  xl:w-32 group-hover:scale-90 group-hover:brightness-90 transition duration-300 ease-in-out"
+        // className="w-16 h-12 object-fill md:w-28 md:h-24 xl:w-32 xl:h-28 group-hover:scale-90 group-hover:brightness-90 transition duration-300 ease-in-out"
       />
       <span className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out text-center mt-2 text:l xl:text-xl">
-        React.JS
+        {name}
       </span>
     </motion.div>
   );
