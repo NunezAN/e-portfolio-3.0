@@ -11,7 +11,7 @@ export default {
     },
     {
       name: "image",
-      title: "TechNamImagees",
+      title: "TechNameImage",
       type: "image",
       options: [{ hotspot: true }],
     },
