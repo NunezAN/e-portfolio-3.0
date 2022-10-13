@@ -70,7 +70,7 @@ export default function Projects({}: Props) {
           <div key={index} className="relative scroll-smooth">
             <a
               href={`#slide${index != 0 ? index - 1 : 5}`}
-              className="btn btn-circle absolute z-21 top-1/2 left-[100px] opacity-0 md:opacity-100"
+              className="btn btn-circle text-5xl absolute z-21 top-1/2 left-[80px] xl:left-[160px] opacity-0 md:opacity-100 h-[80px] w-[80px]"
             >
               ❮
             </a>
@@ -102,7 +102,7 @@ export default function Projects({}: Props) {
             </div>
             <a
               href={`#slide${index != 5 ? index + 1 : 0}`}
-              className="btn btn-circle absolute z-21 top-1/2 right-[100px] opacity-0 md:opacity-100"
+              className="btn btn-circle text-5xl absolute z-21 top-1/2 right-[80px] xl:right-[160px] opacity-0 md:opacity-100 h-[80px] w-[80px]"
             >
               ❯
             </a>
