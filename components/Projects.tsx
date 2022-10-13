@@ -150,9 +150,9 @@ export default function Projects({}: Props) {
                 rel="noopener noreferrer"
               >
                 <motion.img
-                  initial={{ y: -300 }}
+                  initial={{ opacity: 0 }}
                   transition={{ duration: 0.8 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1 }}
                   className="md:w-[600px] rounded-lg"
                   // className="hidden md:block md:w-[600px] rounded-lg"
                   src={project.image}
@@ -160,9 +160,9 @@ export default function Projects({}: Props) {
                 />
               </a>
               <motion.div
-                initial={{ y: 300 }}
+                initial={{ opacity: 0 }}
                 transition={{ duration: 0.8 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1 }}
                 className="space-y-10 px-0 md:px-10 max-w-6xl"
               >
                 <a
