@@ -77,8 +77,8 @@ export default function Projects({}: Props) {
       image: "https://e-portfolio-02.vercel.app/assets/googleClone.png",
       summary:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
-      linkToBuild: "https://github.com/NunezAN/google-clone",
-      linkToGit: "https://clone-11a1a.web.app/",
+      linkToBuild: "https://clone-11a1a.web.app/",
+      linkToGit: "https://github.com/NunezAN/google-clone",
       technologies: [
         tech.javasscript,
         tech.react,
@@ -183,7 +183,7 @@ export default function Projects({}: Props) {
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="https://github.com/NunezAN"
+                    href={project.linkToGit}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
