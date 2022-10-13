@@ -131,7 +131,7 @@ export default function Projects({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 md:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white">
+      <div className="relative mt-12 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 md:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white">
         {projects.map((project, index) => (
           <div key={index} className="relative scroll-smooth">
             <a
@@ -154,7 +154,6 @@ export default function Projects({}: Props) {
                   transition={{ duration: 0.8 }}
                   whileInView={{ opacity: 1 }}
                   className="md:w-[600px] rounded-lg"
-                  // className="hidden md:block md:w-[600px] rounded-lg"
                   src={project.image}
                   alt=""
                 />
