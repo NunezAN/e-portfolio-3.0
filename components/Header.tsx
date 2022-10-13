@@ -20,13 +20,14 @@ export default function Header({}: Props) {
         <a
           href="https://www.linkedin.com/in/alexis-nunez-7b468624a/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon
             icon={faLinkedinIn}
             className="text-[#808080] h-6 w-6 m-4 hover:text-white"
           />
         </a>
-        <a href="https://github.com/NunezAN" target="_blank">
+        <a href="https://github.com/NunezAN" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faGithub}
             className="text-[#808080] h-6 w-6 m-4 hover:text-white"
