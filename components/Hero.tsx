@@ -19,14 +19,21 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <div className="relative rounded-full h-32 w-32 mx-auto object-cover overflow-hidden">
-        <Image
-          src="https://media-exp1.licdn.com/dms/image/D5603AQEnbDPWuxjFUQ/profile-displayphoto-shrink_200_200/0/1664981551253?e=1671062400&v=beta&t=ejaYcHoOk_FOiNcOTBrg9S8l0W13wPu8C9uwxvuFiK0"
+      {/* <div className="bg-transparent relative rounded-full mx-auto object-cover overflow-hidden"> */}
+      {/* <Image
+          // src="https://media-exp1.licdn.com/dms/image/D5603AQEnbDPWuxjFUQ/profile-displayphoto-shrink_200_200/0/1664981551253?e=1671062400&v=beta&t=ejaYcHoOk_FOiNcOTBrg9S8l0W13wPu8C9uwxvuFiK0"
+          src="/memoji.GIF"
           layout="fill"
-          objectFit="cover"
+          // objectFit="cover"
           priority
-        />
-      </div>
+          className="bg-transparent -z-1"
+        /> */}
+      <img
+        className="bg-transparent relative rounded-full h-48 w-48 mx-auto object-cover"
+        src="/memoji.gif"
+        alt=""
+      />
+      {/* </div> */}
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Developer
