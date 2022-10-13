@@ -24,17 +24,21 @@ export default function Header({}: Props) {
         >
           <FontAwesomeIcon
             icon={faLinkedinIn}
-            className="text-[#808080] h-6 w-6 m-4 hover:text-white"
+            className="text-[#808080] h-6 w-6 m-4 hover:text-white transition duration-300 ease-in-out"
           />
         </a>
-        <a href="https://github.com/NunezAN" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/NunezAN"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-[#808080] h-6 w-6 m-4 hover:text-white"
+            className="text-[#808080] h-6 w-6 m-4 hover:text-white transition duration-300 ease-in-out"
           />
         </a>
         <a href="resume.pdf" target="_blank">
-          <DocumentIcon className="text-[#808080] h-6 w-6 m-4 hover:text-white" />
+          <DocumentIcon className="text-[#808080] h-6 w-6 m-4 hover:text-white transition duration-300 ease-in-out" />
         </a>
       </motion.div>
       <Link href="#contact" className="hover:text-white">
@@ -46,9 +50,9 @@ export default function Header({}: Props) {
         >
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="text-[#808080] h-6 w-6 m-4 group-hover:text-white"
+            className="text-[#808080] h-6 w-6 m-4 group-hover:text-white transition duration-300 ease-in-out"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 group-hover:text-white">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 group-hover:text-white transition duration-300 ease-in-out">
             Let&apos;s have a chat
           </p>
         </motion.div>
