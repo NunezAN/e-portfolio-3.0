@@ -4,6 +4,23 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function Projects({}: Props) {
+  const tech = {
+    html: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+    css: "https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png",
+    javasscript:
+      "https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png",
+    react:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    redux:
+      "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+    firebase: "https://services.google.com/fh/files/newsletters/firebase.png",
+    next: "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png",
+    api: "https://www.humhub.com/marketplace/rest/download-image",
+    tailwind:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+    github:
+      "https://pnggrid.com/wp-content/uploads/2022/03/Github-Logo-White.png",
+  };
   const projects = [
     {
       title: "FES Internship",
@@ -12,6 +29,14 @@ export default function Projects({}: Props) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
       linkToBuild: "https://nunez-internship-git-main-nunezan.vercel.app/",
       linkToGit: "https://github.com/NunezAN/Nunez-Internship",
+      technologies: [
+        tech.javasscript,
+        tech.react,
+        tech.api,
+        tech.html,
+        tech.css,
+        tech.github,
+      ],
     },
     {
       title: "Ecommerce Movie Application",
@@ -20,6 +45,14 @@ export default function Projects({}: Props) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
       linkToBuild: "https://react-library-phi.vercel.app/",
       linkToGit: "https://github.com/NunezAN/react-library",
+      technologies: [
+        tech.javasscript,
+        tech.react,
+        tech.api,
+        tech.html,
+        tech.css,
+        tech.github,
+      ],
     },
     {
       title: "Marvel Comic Application",
@@ -28,6 +61,16 @@ export default function Projects({}: Props) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
       linkToBuild: "https://marvel-1b3e8.web.app/",
       linkToGit: "https://github.com/NunezAN/marvel-react",
+      technologies: [
+        tech.javasscript,
+        tech.react,
+        tech.api,
+        tech.redux,
+        tech.firebase,
+        tech.html,
+        tech.css,
+        tech.github,
+      ],
     },
     {
       title: "Google/Gmail Clone",
@@ -36,6 +79,16 @@ export default function Projects({}: Props) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
       linkToBuild: "https://github.com/NunezAN/google-clone",
       linkToGit: "https://clone-11a1a.web.app/",
+      technologies: [
+        tech.javasscript,
+        tech.react,
+        tech.api,
+        tech.redux,
+        tech.firebase,
+        tech.html,
+        tech.css,
+        tech.github,
+      ],
     },
     {
       title: "Twitter Clone",
@@ -44,6 +97,14 @@ export default function Projects({}: Props) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
       linkToBuild: "https://twitter-clone-e4f49.web.app/",
       linkToGit: "https://github.com/NunezAN/Twitter-clone",
+      technologies: [
+        tech.javasscript,
+        tech.react,
+        tech.firebase,
+        tech.html,
+        tech.css,
+        tech.github,
+      ],
     },
     {
       title: "Hulu Clone",
@@ -53,6 +114,14 @@ export default function Projects({}: Props) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
       linkToBuild: "https://hulu-2-0-iota.vercel.app/",
       linkToGit: "https://github.com/NunezAN/hulu-2.0",
+      technologies: [
+        tech.javasscript,
+        tech.next,
+        tech.tailwind,
+        tech.api,
+        tech.html,
+        tech.github,
+      ],
     },
   ];
   return (
@@ -95,6 +164,11 @@ export default function Projects({}: Props) {
                 <h4 className="text-4xl font-semibold text-center">
                   {project.title}
                 </h4>
+                <div className="flex items-center justify-center space-x-2">
+                  {project.technologies.map((tech, index) => (
+                    <img src={tech} key={index} className="h-10 w-10" />
+                  ))}
+                </div>
                 <p className="text-lg text-center md:text-left">
                   {project.summary}
                 </p>

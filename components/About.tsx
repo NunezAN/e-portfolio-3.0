@@ -1,3 +1,4 @@
+import { DocumentIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -31,6 +32,12 @@ export default function About({}: Props) {
           websites. I currently solving extremely difficult engineering problems
           every day, no kizzy.
         </p>
+        <div className="hidden md:flex items-center">
+          <span>Click to see my resume:</span>
+          <a href="resume.pdf" target="_blank">
+            <DocumentIcon className="text-[#808080] h-6 w-6 ml-2 hover:text-white animate-bounce" />
+          </a>
+        </div>
       </div>
     </motion.div>
   );
