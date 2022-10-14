@@ -20,10 +20,10 @@ export default function About({}: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
         src="https://media.newyorker.com/photos/5c882173b52af22cd6fe65c9/master/w_2560%2Cc_limit/720318_ra623.jpg"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-24 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
       />
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="md:space-y-10 px-0 md:px-10">
+        <h4 className="hidden md:block text-4xl font-semibold">
           Here&apos;s a bit about{" "}
           <span className="underline decoration-[#7289da]/50">me.</span>
         </h4>
