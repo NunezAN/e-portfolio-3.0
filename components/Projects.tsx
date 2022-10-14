@@ -29,7 +29,7 @@ export default function Projects({}: Props) {
       title: "FES Internship",
       image: "https://e-portfolio-02.vercel.app/assets/internshipCover.png",
       summary:
-        `-The goal of this internship project was to transform a completely static HTML, CSS, JavaScript and React single page application into an interactive user interface through the use of animations, transitions and carousels.\n -Processed API requests to dynamically represent data from a cloud server and represented it through skeleton loading states, pagination and dynamic routing.\n-Utilized Git version control and the GitHub interface to work and thrive in a collaborative team environment`,
+        `-The goal of this internship project was to transform a completely static HTML, CSS, JavaScript and React single page application into an interactive user interface through the use of animations, transitions and carousels.\n -Processed API requests to dynamically represent data from a cloud server and represented it through skeleton loading states, pagination and dynamic routing.\n-Utilized Git version control and the GitHub interface to work and thrive in a collaborative team environment.`,
       linkToBuild: "https://nunez-internship-git-main-nunezan.vercel.app/",
       linkToGit: "https://github.com/NunezAN/Nunez-Internship",
       technologies: [
@@ -44,7 +44,7 @@ export default function Projects({}: Props) {
       title: "Ecommerce Movie Application",
       image: "https://e-portfolio-02.vercel.app/assets/blockbusterCover.png",
       summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+        "-This project was created to serve as an ecommerce application for a company selling movies. This application was created using React and javascript.\n-All the movie data is being fetched and processed using axios from `The Movie DB API`.\n-The movie collection can be seen by clicking the Movies section in the nav. The movies page has the functionaly to dynamically filter all the movies using the filter dropdown.\n-The Application has the functionality to dynamically add or remove items to the cart and display the information on the checkout page.",
       linkToBuild: "https://react-library-phi.vercel.app/",
       linkToGit: "https://github.com/NunezAN/react-library",
       technologies: [
@@ -59,7 +59,7 @@ export default function Projects({}: Props) {
       title: "Marvel Comic Application",
       image: "https://e-portfolio-02.vercel.app/assets/marvelProject.png",
       summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+        "-This application was created with the purpose of searching a marvel hero's name, retrieving the hero's available comic book information and storing a collection of the users favorite comic books.\n-All the comic book data displayed was fetched and processed using axios from the official Marvel API.\n-After the user selects a comic book, they have the ability to add/remove the comic book to/from their collection of favorites by clicking on the star on the top right of the comic book detail screen. This functionality was created using Firebase's Firestore to create a database and w/ the ability to store/remove data in real-time.\n-The user can then click on `My Favorites` on the header section and view their stored collection of favorited comics.",
       linkToBuild: "https://marvel-1b3e8.web.app/",
       linkToGit: "https://github.com/NunezAN/marvel-react",
       technologies: [
@@ -76,7 +76,7 @@ export default function Projects({}: Props) {
       title: "Google/Gmail Clone",
       image: "https://e-portfolio-02.vercel.app/assets/googleClone.png",
       summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+        "-This prject is intended to have the same look and feel of Google search engine and gmail web application using React and CSS.\n-All the data displayed during the Google search is being fetched and processed using axios from Googles search API.\n-For the gmail web application, Firebase's Authentication was used to take in google credentials as a login. Firebase's Firestore was used as the backend service to build a mock Gmail account database.\n-User can send out an email in the same Gmail fashion by clicking on the compose button. Once the email is sent, it will populate the firestore db and be displayed on the Gmail feed. The emails in the email have functionality and can be clicked to view contents.",
       linkToBuild: "https://clone-11a1a.web.app/",
       linkToGit: "https://github.com/NunezAN/google-clone",
       technologies: [
@@ -93,7 +93,7 @@ export default function Projects({}: Props) {
       title: "Twitter Clone",
       image: "https://e-portfolio-02.vercel.app/assets/twitterClone.png",
       summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+        "-This project is intended to have the same look and feel of Twitter using React and javascript.\n-Using Firebase's Firestore as the backend service, you are able to send out a tweet with an image/gif url and populate the database in real-time. As soon as the backend is updated, the tweet will be displayed on the feed using a flip animation similar to the experience from the official twitter website.",
       linkToBuild: "https://twitter-clone-e4f49.web.app/",
       linkToGit: "https://github.com/NunezAN/Twitter-clone",
       technologies: [
@@ -109,7 +109,7 @@ export default function Projects({}: Props) {
       image:
         "https://cdn.sanity.io/images/owbhdwhm/production/334e4f969fe6df9be28e813ecf5c12130e8c2b5d-1920x1080.png?w=2000&fit=max&auto=format",
       summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+        "-This project is intended to have the same look and feel of hulu but with a modern layout usind tailwind css and next.js.\n-All the movie/show data displayed is being fetched and processed using axios from `The Movie DB API`.\n-Using tailwind css, the application is fully responsive to display the movie/show data from a mobile device to a TV screen.",
       linkToBuild: "https://hulu-2-0-iota.vercel.app/",
       linkToGit: "https://github.com/NunezAN/hulu-2.0",
       technologies: [
