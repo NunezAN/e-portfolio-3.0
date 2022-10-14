@@ -40,11 +40,11 @@ export default function Contact({}: Props) {
         Contact me
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-2xl md:text-4xl mt-20 md:mt-0 font-semibold text-center">
+        <h4 className="hidden md:block text-2xl md:text-4xl mt-20 md:mt-0 font-semibold text-center">
           Currently open to new opportunities,{" "}
           <span className="underline decoration-[#7289da]/50">Let&apos;s Talk.</span>
         </h4>
-        <div className="space-y-10">
+        <div className="hidden md:block space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#7289da] h-7 w-7 animate-pulse" />
             <p className="text-2xl">nunez101alexis@gmail.com</p>
