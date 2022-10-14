@@ -29,7 +29,7 @@ export default function Projects({}: Props) {
       title: "FES Internship",
       image: "https://e-portfolio-02.vercel.app/assets/internshipCover.png",
       summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dolorum eligendi, quis quo, alias, fugit similique error voluptas unde odio amet esse numquam dolorem. Obcaecati soluta ab maiores necessitatibus. Perferendis eligendi ullam ipsa, est animi laborum fuga illo vel!",
+        `-The goal of this internship project was to transform a completely static HTML, CSS, JavaScript and React single page application into an interactive user interface through the use of animations, transitions and carousels.\n -Processed API requests to dynamically represent data from a cloud server and represented it through skeleton loading states, pagination and dynamic routing.\n-Utilized Git version control and the GitHub interface to work and thrive in a collaborative team environment`,
       linkToBuild: "https://nunez-internship-git-main-nunezan.vercel.app/",
       linkToGit: "https://github.com/NunezAN/Nunez-Internship",
       technologies: [
@@ -142,7 +142,7 @@ export default function Projects({}: Props) {
             </a>
             <div
               id={`slide${index}`}
-              className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen snap-mandatory"
+              className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center md:justify p-20 md:p-44 h-screen snap-mandatory"
             >
               <a
                 href={project.linkToBuild}
@@ -153,7 +153,7 @@ export default function Projects({}: Props) {
                   initial={{ opacity: 0 }}
                   transition={{ duration: 0.8 }}
                   whileInView={{ opacity: 1 }}
-                  className="md:w-[600px] rounded-lg"
+                  className="max-w-[300px] md:max-w-[340px] lg:max-w-[500px] xl:max-w-[600px]rounded-lg object-contain"
                   src={project.image}
                   alt=""
                 />
@@ -178,7 +178,7 @@ export default function Projects({}: Props) {
                     <img src={tech} key={index} className="h-10 w-10" />
                   ))}
                 </div>
-                <p className="hidden md:block text-lg text-center md:text-left">
+                <p className="hidden md:block text-sm lg:text-md xl:text-[18px] text-center md:text-left whitespace-pre-line">
                   {project.summary}
                 </p>
                 <div className="flex justify-center">
