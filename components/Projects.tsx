@@ -76,7 +76,7 @@ export default function Projects({}: Props) {
       title: "Google/Gmail Clone",
       image: "https://e-portfolio-02.vercel.app/assets/googleClone.png",
       summary:
-        "-This prject is intended to have the same look and feel of Google search engine and gmail web application using React and CSS.\n-All the data displayed during the Google search is being fetched and processed using axios from Googles search API.\n-For the gmail web application, Firebase's Authentication was used to take in google credentials as a login. Firebase's Firestore was used as the backend service to build a mock Gmail account database.\n-User can send out an email in the same Gmail fashion by clicking on the compose button. Once the email is sent, it will populate the firestore db and be displayed on the Gmail feed. The emails in the email have functionality and can be clicked to view contents.",
+        "-This project is intended to have the same look and feel of Google search engine and gmail web application using React and CSS.\n-All the data displayed during the Google search is being fetched and processed using axios from Googles search API.\n-For the gmail web application, Firebase's Authentication was used to take in google credentials as a login. Firebase's Firestore was used as the backend service to build a mock Gmail account database.\n-User can send out an email in the same Gmail fashion by clicking on the compose button. Once the email is sent, it will populate the firestore db and be displayed on the Gmail feed. The emails in the email have functionality and can be clicked to view contents.",
       linkToBuild: "https://clone-11a1a.web.app/",
       linkToGit: "https://github.com/NunezAN/google-clone",
       technologies: [
