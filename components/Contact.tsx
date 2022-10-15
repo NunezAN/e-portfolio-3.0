@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 import emailjs from "@emailjs/browser";
 
@@ -8,6 +10,7 @@ type Props = {};
 
 export default function Contact({}: Props) {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -16,7 +19,7 @@ export default function Contact({}: Props) {
     // in case currentForm cannot possibly ever be null,
     // you could alert the user or throw an Error, here
     if (currentForm == null) return;
-
+    setSending(true);
     emailjs
       .sendForm(
         "service_ayx2rku",
@@ -28,6 +31,7 @@ export default function Contact({}: Props) {
         (result) => {
           console.log(result.text);
           setSent(true);
+          setSending(false);
         },
         (error) => {
           console.log(error.text);
@@ -42,7 +46,9 @@ export default function Contact({}: Props) {
       <div className="flex flex-col space-y-10">
         <h4 className="hidden md:block text-2xl md:text-4xl mt-20 md:mt-0 font-semibold text-center">
           Currently open to new opportunities,{" "}
-          <span className="underline decoration-[#7289da]/50">Let&apos;s Talk.</span>
+          <span className="underline decoration-[#7289da]/50">
+            Let&apos;s Talk.
+          </span>
         </h4>
         <div className="hidden md:block space-y-10">
           <div className="flex items-center space-x-5 justify-center">
@@ -87,9 +93,19 @@ export default function Contact({}: Props) {
             type="submit"
             className={`${
               sent ? `bg-[#71BC68]` : `bg-[#7289da]`
-            } py-5 px=10 rounded-md text-black font-bold text-lg`}
+            } py-5 px=10 rounded-md text-black font-bold text-lg text-center`}
           >
-            {sent ? "Sent" : "Submit"}
+            {/* {sent ? "Sent" : "Submit"} */}
+            {sending ? (
+              <FontAwesomeIcon
+                icon={faSpinner}
+                className="animate-spin h-[28px] w-[28px] m-auto"
+              />
+            ) : sent ? (
+              "Sent"
+            ) : (
+              "Submit"
+            )}
           </button>
         </form>
       </div>
