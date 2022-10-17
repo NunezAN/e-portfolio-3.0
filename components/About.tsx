@@ -28,7 +28,7 @@ export default function About({}: Props) {
           <span className="underline decoration-[#7289da]/50">me.</span>
         </h4>
         <p className="text-sm sm:text-base md:text-lg md:leading-8">
-          I&apos;m based out of Dallas/Fort Worth with 3 years experience in the tech field. I have a newly found passion for building web applications with responsive ui that provide great intuitive user experiences. I am strong in design and integration with intuitive problem-solving skills. Proficient in JAVASCRIPT, HTML and CSS with the ability to translate business requirements into technical solutions. Looking to start a new step in my career as an entry-level frontend software engineer.
+          I&apos;m based out of Dallas/Fort Worth with 3 years experience in the tech field. With a newly found passion for building web applications with responsive ui that provide great user experiences. I am strong in design and integration with intuitive problem-solving skills. Proficient in JAVASCRIPT, HTML and CSS with the ability to translate business requirements into technical solutions. Looking to start a new step in my career as an entry-level frontend software engineer.
         </p>
         <div className="hidden md:flex items-center">
           <span>Click to see my resume:</span>
