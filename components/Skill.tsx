@@ -9,7 +9,7 @@ type Props = {
 export default function Skill({ url, name }: Props) {
   return (
     <motion.div
-      initial={{ y: 200, opacity: 0 }}
+      initial={{ y: 120, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
