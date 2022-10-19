@@ -18,7 +18,7 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <a
-          href="https://www.linkedin.com/in/alexis-nunez-7b468624a/"
+          href="https://www.linkedin.com/in/nunezAlexis/"
           target="_blank"
           rel="noopener noreferrer"
         >
