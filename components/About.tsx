@@ -19,8 +19,8 @@ export default function About({}: Props) {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
-        src="https://media.newyorker.com/photos/5c882173b52af22cd6fe65c9/master/w_2560%2Cc_limit/720318_ra623.jpg"
-        className="-mb-24 mt-24 md:mt-0 md:mb-0 flex-shrink-0 w-40 h-40 sm:w-40 h-50 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        src="/profile.jpg"
+        className="-mb-24 mt-24 md:mt-0 md:mb-0 flex-shrink-0 w-40 h-40 sm:w-40 h-50 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
       />
       <div className="space-y-0 md:space-y-10 px-0 md:px-10">
         <h4 className="hidden md:block text-4xl font-semibold">
