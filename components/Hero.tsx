@@ -29,8 +29,9 @@ export default function Hero({}: Props) {
           className="bg-transparent -z-1"
         /> */}
       <img
-        className="bg-transparent relative rounded-full h-48 w-48 mx-auto object-cover"
-        src="/memoji.gif"
+        className="bg-[#ffffff] relative rounded-full h-52 w-52 mx-auto !my-0 object-cover shadow-md mix-blend-normal"
+        src="/hero.PNG"
+        // src="/memoji.gif"
         alt=""
       />
       {/* </div> */}
