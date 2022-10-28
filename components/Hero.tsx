@@ -29,14 +29,14 @@ export default function Hero({}: Props) {
           className="bg-transparent -z-1"
         /> */}
       <img
-        className="bg-[#ffffff] relative rounded-full h-52 w-52 mx-auto !my-0 object-cover shadow-md mix-blend-normal"
-        src="/hero.png"
-        // src="/memoji.gif"
+        className="bg-transparent relative rounded-full h-52 w-52 mx-auto !mt-4 object-cover"
+        // src="/hero.png"
+        src="/memoji.gif"
         alt=""
       />
       {/* </div> */}
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm md:text-md uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Developer
         </h2>
         <h1 className="text-xl md:text-6xl font-semibold px-10">
@@ -45,13 +45,13 @@ export default function Hero({}: Props) {
         </h1>
         <div className="pt-5">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button className="heroButton md:text-lg">About</button>
           </Link>
           <Link href="#skills">
-            <button className="heroButton">Skills</button>
+            <button className="heroButton md:text-lg">Skills</button>
           </Link>
           <Link href="#projects">
-            <button className="heroButton">Projects</button>
+            <button className="heroButton md:text-lg">Projects</button>
           </Link>
         </div>
       </div>
