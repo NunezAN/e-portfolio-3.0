@@ -30,7 +30,7 @@ export default function Hero({}: Props) {
         /> */}
       <img
         className="bg-[#ffffff] relative rounded-full h-52 w-52 mx-auto !my-0 object-cover shadow-md mix-blend-normal"
-        src="/hero.PNG"
+        src="/hero.png"
         // src="/memoji.gif"
         alt=""
       />
