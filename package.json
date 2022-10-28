@@ -19,6 +19,7 @@
     "@portabletext/react": "^1.0.6",
     "@sanity/cli": "^2.34.0",
     "@sanity/image-url": "^1.0.1",
+    "@types/react-lottie": "^1.2.6",
     "daisyui": "^2.31.0",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",
@@ -27,6 +28,7 @@
     "react-daisyui": "^2.4.3",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.37.0",
+    "react-lottie": "^1.2.3",
     "react-simple-typewriter": "^4.0.5",
     "react-social-icons": "^5.15.0"
   },

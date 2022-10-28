@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
+import Lottie from "react-lottie";
+
 
 type Props = {};
 
@@ -16,6 +18,22 @@ export default function Hero({}: Props) {
     loop: true,
     delaySpeed: 2000,
   });
+  const defaultOptions = {
+    loop: true,
+    autoPlay: true,
+    animationData: require("/public/hero.json"),
+    rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
+  };
+  // const container = useRef(null);
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: ``,
+  //   });
+  // }, []);
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
@@ -28,12 +46,15 @@ export default function Hero({}: Props) {
           priority
           className="bg-transparent -z-1"
         /> */}
-      <img
+      {/* <img
         className="bg-transparent relative rounded-full h-52 w-52 mx-auto !mt-4 object-cover"
         // src="/hero.png"
         src="/memoji.gif"
         alt=""
-      />
+      /> */}
+      <div className="relative rounded-full h-60 w-60 mx-auto !mt-[-48px] !mb-4 object-cover">
+        <Lottie options={defaultOptions} height={260} width={270}></Lottie>
+      </div>
       {/* </div> */}
       <div className="z-20">
         <h2 className="text-sm md:text-md uppercase text-gray-500 pb-2 tracking-[15px]">
