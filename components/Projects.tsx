@@ -18,7 +18,7 @@ export default function Projects({}: Props) {
       "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
     firebase: "https://services.google.com/fh/files/newsletters/firebase.png",
     next: "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png",
-    api: "https://www.humhub.com/marketplace/rest/download-image",
+    api: "https://cdn-icons-png.flaticon.com/512/1493/1493169.png",
     tailwind:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
     github:

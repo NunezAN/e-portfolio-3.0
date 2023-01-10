@@ -46,7 +46,7 @@ export default function Skills({}: Props) {
           name="Next.JS"
         />
         <Skill
-          url="https://www.humhub.com/marketplace/rest/download-image"
+          url="https://cdn-icons-png.flaticon.com/512/1493/1493169.png"
           name="Rest APIs"
         />
         <Skill
