@@ -73,6 +73,20 @@ export default function Projects({}: Props) {
       ],
     },
     {
+      title: "Local Business Projects",
+      image: "https://i.ibb.co/XLvZHLr/Screen-Shot-2023-02-08-at-1-33-16-PM.png",
+      summary:
+        "-Used React, JavaScript, and CSS to create custom websites for local businesses that enhanced their sales.\n-Improved customer interaction by incorporating responsive designs that ensured optimal mobile and desktop visibility.\n-Executed the migration of outdated multi-page user interface into modern, responsive single-page application using React.",
+      linkToBuild: "https://www.tchaircuts.hair/",
+      linkToGit: "https://github.com/NunezAN/tc-haircuts",
+      technologies: [
+        tech.javasscript,
+        tech.react,
+        tech.html,
+        tech.css,
+      ],
+    },
+    {
       title: "Google/Gmail Clone",
       image: "https://e-portfolio-02.vercel.app/assets/googleClone.png",
       summary:
@@ -135,7 +149,7 @@ export default function Projects({}: Props) {
         {projects.map((project, index) => (
           <div key={index} className="relative scroll-smooth">
             <a
-              href={`#slide${index != 0 ? index - 1 : 5}`}
+              href={`#slide${index != 0 ? index - 1 : 6}`}
               className="btn btn-circle text-5xl absolute z-21 top-1/2 left-[80px] xl:left-[160px] opacity-0 md:opacity-100 h-[80px] w-[80px]"
             >
               ❮
@@ -196,7 +210,7 @@ export default function Projects({}: Props) {
               </motion.div>
             </div>
             <a
-              href={`#slide${index != 5 ? index + 1 : 0}`}
+              href={`#slide${index != 6 ? index + 1 : 0}`}
               className="btn btn-circle text-5xl absolute z-21 top-1/2 right-[80px] xl:right-[160px] opacity-0 md:opacity-100 h-[80px] w-[80px]"
             >
               ❯
