@@ -54,8 +54,7 @@ export default function Skills({}: Props) {
           name="Tailwind CSS"
         />
         <Skill
-          url="https://pnggrid.com/wp-content/uploads/2022/03/Github-Logo-White.png"
-          // url="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          url="https://cdn-icons-png.flaticon.com/512/25/25231.png"
           // url="https://pnggrid.com/wp-content/uploads/2022/03/Github-Logo-White.png"
           name="GitHub"
         />
